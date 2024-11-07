@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecs</title>
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-entity 
+        geometry="primitive: ring" 
+        material="color: purple" 
+        light="type: hemisphere; intensity: 0.5" 
+        position="0 1 -1" ></a-entity>
+
+        <a-entity geometry="primitive: sphere; radius: 2"
+        material="color: black"
+        light="type: hemisphere; intensity: 0.5" 
+        position="0 1 -4" >></a-entity>
+
+        <a-entity geometry="primitive: dodecahedron; radiusInner: 0.5; radiusOuter: 1"
+        material="side: double"
+        light="type: hemisphere; intensity: 0.5" 
+        position="0 1 -8"></a-entity>
+        
+    </a-scene>
+</body>
+</html>
