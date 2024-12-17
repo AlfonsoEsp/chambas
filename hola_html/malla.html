@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<body>
+    <a-assets>
+        <!--a assest-item id="navmesh" src="assets"/navmesh.glb"></a-asset-item-->
+    </a-assets>
+
+    <!--player. -->
+    <a-entity id="rig"
+    movement-controls="constrainsToNavMesh: true;
+                       controls: checkpoint,gamepad.trackpad.keyboard,nipple;"
+        position="-7 0 21">
+    <a-entity camera
+            position="0 1.6 0"
+            look-controls="pointerLockEnabled:true">
+<a-cursor></a-cursor>
+</a-entity>
+</a-entity>
+
+<!--Nav mesh. -->
+<a-entity nav-mesh
+normal-material
+visible="false"
+position="0 0 -5"
+gltf-model="#navmesh"></a-entity>
